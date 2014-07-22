@@ -9,7 +9,6 @@ public class Index extends PrescriptionTechnologyActivity {
     public void onCreate(Bundle savedInstanceState) {        
     	super.onCreate(savedInstanceState);
         super.loadUrl("file:///android_asset/www/views/index.html");
-        //cata first commit
     }
     
 }
