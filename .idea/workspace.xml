@@ -9,12 +9,12 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="prescription" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="723ce580-1618-4a72-ad27-6eb7e3181100" name="Default" comment="delete alert aaa">
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\assets\www\views\customer_address\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\assets\www\views\customer_personal_info\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\assets\www\views\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\assets\www\views\order_confirmation\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\assets\www\views\questions\index.html" afterPath="" />
+    <list default="true" id="723ce580-1618-4a72-ad27-6eb7e3181100" name="Default" comment="schimbare structura proiect">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/customeraddress.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/customerpersonalinfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/orderconfirmation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/questions.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Prescription.technology.iws" />
@@ -77,7 +77,18 @@
     <favorites_list name="Prescription.technology" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="customeraddress.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/www/customeraddress.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -477,7 +488,11 @@
       <created>1406123470303</created>
       <updated>1406123470303</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="schimbare structura proiect">
+      <created>1406125812671</created>
+      <updated>1406125812671</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +545,8 @@
     <MESSAGE value="All files commit" />
     <MESSAGE value="alert aaa" />
     <MESSAGE value="delete alert aaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete alert aaa" />
+    <MESSAGE value="schimbare structura proiect" />
+    <option name="LAST_COMMIT_MESSAGE" value="schimbare structura proiect" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -737,6 +753,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22042139" vertical-offset="0" max-vertical-offset="617">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/customeraddress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
