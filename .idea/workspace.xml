@@ -10,11 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="723ce580-1618-4a72-ad27-6eb7e3181100" name="Default" comment="schimbare structura proiect">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/customeraddress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/customerpersonalinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/orderconfirmation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/questions.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Prescription.technology.iws" />
@@ -81,7 +76,7 @@
       <file leaf-file-name="customeraddress.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/www/customeraddress.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -125,6 +120,7 @@
         <option value="$PROJECT_DIR$/assets/www/views/order_confirmation/index.html" />
         <option value="$PROJECT_DIR$/assets/www/views/customer_address/index.html" />
         <option value="$PROJECT_DIR$/assets/www/views/customer_personal_info/index.html" />
+        <option value="$PROJECT_DIR$/assets/www/customeraddress.html" />
       </list>
     </option>
   </component>
@@ -492,7 +488,11 @@
       <created>1406125812671</created>
       <updated>1406125812671</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="schimbare structura proiect">
+      <created>1406125894952</created>
+      <updated>1406125894952</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
