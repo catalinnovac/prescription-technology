@@ -9,6 +9,7 @@ public class PrescriptionTechnologyActivity extends DroidGap {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.init();
         appView.addJavascriptInterface(this, "prescription");
     }
 

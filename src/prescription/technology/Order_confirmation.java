@@ -8,7 +8,7 @@ public class Order_confirmation extends PrescriptionTechnologyActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //super.loadUrl("file:///android_asset/www/views/order_confirmation/index.html");
+        super.loadUrl("file:///android_asset/www/orderconfirmation.html");
     }
 
 }

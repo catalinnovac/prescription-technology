@@ -8,7 +8,7 @@ public class Customer_address extends PrescriptionTechnologyActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //super.loadUrl("file:///android_asset/www/views/customer_address/index.html");
+        super.loadUrl("file:///android_asset/www//customeraddress.html");
     }
 
 }
