@@ -45,38 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-                android:name="prescription.technology.Customer_address"
-                android:label="@string/customer_address">
-            <intent-filter>
-                <action android:name="prescription.technology.CUSTOMER_ADDRESS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="prescription.technology.Customer_personal_info"
-                android:label="@string/customer_personal_info">
-            <intent-filter>
-                <action android:name="prescription.technology.CUSTOMER_PERSONAL_INFO"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="prescription.technology.Order_confirmation"
-                android:label="@string/order_confirmation">
-            <intent-filter>
-                <action android:name="prescription.technology.ORDER_CONFIRMATION"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="prescription.technology.Questions"
-                android:label="@string/questions">
-            <intent-filter>
-                <action android:name="prescription.technology.QUESTIONS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
