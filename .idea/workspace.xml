@@ -20,173 +20,48 @@
     <bookmark url="file://$PROJECT_DIR$/assets/www/index.html" line="13" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="723ce580-1618-4a72-ad27-6eb7e3181100" name="Default" comment="remove activities">
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\acasa.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\comenzi.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\conectare.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\config.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\cont.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\contact.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\cordova.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\css\_TEMP_jquery.mobile-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\css\_TEMP_jquery.mobile.structure-1.3.2.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\css\idangerous.swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\css\index.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\detalii_comanda.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_deconectare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_intratiincont - Copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_intratiincont.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_stareacomenzilor.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_sunatilabebetei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\buton_sunatilafacrmaciatei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\email.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\flag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\footer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\fundal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\fundal_eroare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\icon-lista-categorii.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\lightbulb.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\linie_orizontala.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\logo_cft_512x512.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\logo_mic.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\order.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\phone.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\pin.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\semn_raquo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\shipping.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\img\tag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\_DEL_simpleMobileAjax.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\_TEMP_jquery.mobile-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\_TEMP_jquery.mobile.structure-1.3.2.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\custom.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\httpRequest.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\idangerous.swiper-2.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\assets\www\js\swipe.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\Test3.apk" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\MainActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R$xml.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\R.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$10.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$7.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$8.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$9.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$Base64.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$CloseOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$FlushOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$HttpRequestException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$Operation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest$RequestOutputStream.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequestPlugin$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\classes\com\bycolor\test3\plugins\http\HttpRequestPlugin.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\dexedLibs\android-support-v4-391f3c2a217b2f42cfe1ce51130646b0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\dexedLibs\cordova-2.9.0-773f7a368de55bb877967d994c63ed97.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\jarlist.cache" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\buton_deautentificare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\buton_intratiincont.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\buton_stareacomenzilor.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\buton_sunatilabebetei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\buton_sunatilafacrmaciatei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\flag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\footer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\fundal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\fundal_eroare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\lightbulb.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\linie_orizontala.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\logo_cft_512x512.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\logo_mic.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\order.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\phone.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\pin.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\semn_raquo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\shipping.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-hdpi\tag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\res\crunch\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\bin\resources.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\gen\com\bycolor\test3\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\gen\com\bycolor\test3\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\libs\cordova-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\buton_deautentificare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\buton_intratiincont.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\buton_stareacomenzilor.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\buton_sunatilabebetei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\buton_sunatilafacrmaciatei.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\flag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\footer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\fundal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\fundal_eroare.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\lightbulb.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\linie_orizontala.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\logo_cft_512x512.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\logo_mic.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\order.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\phone.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\pin.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\semn_raquo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\shipping.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-hdpi\tag.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\xml\config.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\res\xml\plugins.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\src\com\bycolor\test3\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\src\com\bycolor\test3\plugins\http\HttpRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\android\Prescription.technology\Test3\src\com\bycolor\test3\plugins\http\HttpRequestPlugin.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/prescription/technology/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/prescription/technology/BuildConfig.java" />
+    <list default="true" id="723ce580-1618-4a72-ad27-6eb7e3181100" name="Default" comment="remove test3 from project">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_deconectare.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_intratiincont - Copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_intratiincont.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_stareacomenzilor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_sunatilabebetei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/buton_sunatilafacrmaciatei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/flag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/footer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/fundal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/fundal_eroare.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/icon-lista-categorii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/key.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/lightbulb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/linie_orizontala.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/logo_cft_512x512.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/logo_mic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/order.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/phone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/pin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/semn_raquo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/shipping.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/_DEL_simpleMobileAjax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/css/_TEMP_jquery.mobile-1.3.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/_TEMP_jquery.mobile-1.3.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/css/_TEMP_jquery.mobile.structure-1.3.2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/_TEMP_jquery.mobile.structure-1.3.2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/conectare.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/custom.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/httpRequest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/idangerous.swiper-2.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/css/idangerous.swiper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/jquery-migrate-1.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/swipe.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Prescription.technology.iws" />
@@ -253,7 +128,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55284554" vertical-offset="0" max-vertical-offset="369">
+            <state vertical-scroll-proportion="0.48341233" vertical-offset="0" max-vertical-offset="422">
               <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="e#379#994#0" expanded="false" />
@@ -340,7 +215,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,8 +233,27 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Prescription.technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Prescription.technology" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +275,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="LGOTMS5cdbfc" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAvd0" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="143" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="172" />
@@ -631,7 +524,11 @@
       <created>1406131685614</created>
       <updated>1406131685614</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="remove test3 from project">
+      <created>1406143823856</created>
+      <updated>1406143823856</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -649,20 +546,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4372093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34418604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2620155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30966324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3081991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34263566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3875969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -689,7 +586,8 @@
     <MESSAGE value="alert a" />
     <MESSAGE value="files path change" />
     <MESSAGE value="remove activities" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove activities" />
+    <MESSAGE value="remove test3 from project" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove test3 from project" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -714,6 +612,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="323">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#379#994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="323">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#379#994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="323">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
@@ -726,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="935">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="935">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,13 +865,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21303259" vertical-offset="527" max-vertical-offset="935">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55284554" vertical-offset="0" max-vertical-offset="369">
+        <state vertical-scroll-proportion="0.48341233" vertical-offset="0" max-vertical-offset="422">
           <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding>
             <element signature="e#379#994#0" expanded="false" />
