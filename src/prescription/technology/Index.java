@@ -1,14 +1,14 @@
 package prescription.technology;
 
 import android.os.Bundle;
-import prescription.technology.code.PrescriptionTechnologyActivity;
+import prescription.technology.code.PrescriptionTechnologyWithNavigationDrawer;
 
-public class Index extends PrescriptionTechnologyActivity {
+public class Index extends PrescriptionTechnologyWithNavigationDrawer {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {        
     	super.onCreate(savedInstanceState);
-        super.loadUrl("file:///android_asset/www/index.html");
+        appView.loadUrl("file:///android_asset/www/index.html");
     }
     
 }
