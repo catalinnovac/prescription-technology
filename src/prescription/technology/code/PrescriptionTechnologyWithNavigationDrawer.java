@@ -42,8 +42,12 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         // Set the adapter for the list view
+        /*
         mDrawerList.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.left_drawer_item, mPlanetTitles));
+                */
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, mPlanetTitles));
     }
 
     @Override
