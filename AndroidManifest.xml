@@ -37,6 +37,7 @@
             android:label="@string/index"
             android:theme="@style/AppTheme">
         <activity
+                android:theme="@style/Theme.AppCompat.Light"
                 android:name="prescription.technology.Index"
                 android:label="@string/index">
             <intent-filter>

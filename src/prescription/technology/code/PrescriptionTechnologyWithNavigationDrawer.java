@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import org.apache.cordova.Config;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.api.CordovaInterface;
 import org.apache.cordova.api.CordovaPlugin;
 import prescription.technology.R;
+import prescription.technology.code.navigation.drawer.Adapter;
+import prescription.technology.code.navigation.drawer.Item;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -24,10 +27,10 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     protected CordovaWebView leftView;
     boolean activityResultKeepRunning;
     boolean keepRunning;
-    private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private CordovaPlugin activityResultCallback;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,17 +40,20 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         Config.init(this);
         appView.addJavascriptInterface(this, "prescription");
         appView.addJavascriptInterface(new Constants(), "constants");
-
-        mPlanetTitles = new String[]{"TEST 1", "TEST 2"};
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
-        // Set the adapter for the list view
-        /*
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.left_drawer_item, mPlanetTitles));
-                */
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, mPlanetTitles));
+        List<Item> items = new ArrayList<Item>();
+        Item item = new Item();
+        item.Id = "shopping-cart";
+        item.FILE_URL = "file:///android_asset/www/shoppingcart.html";
+        items.add(item);
+        Item item1 = new Item();
+        item1.Id = "account-info";
+        item1.FILE_URL = "file:///android_asset/www/accountinfo.html";
+        items.add(item1);
+
+        mDrawerList.setAdapter(new Adapter(this,
+                R.layout.left_drawer_item, items));
     }
 
     @Override

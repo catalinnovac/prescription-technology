@@ -4,7 +4,6 @@ import android.webkit.JavascriptInterface;
 
 public class Constants {
 
-
     public final String CUSTOMER_ADDRESS_ACTIVITY = "prescription.technology.CUSTOMER_ADDRESS";
     public final String CUSTOMER_PERSONAL_INFO_ACTIVITY = "prescription.technology.CUSTOMER_PERSONAL_INFO";
     public final String ORDER_CONFIRMARTION_ACTIVITY = "prescription.technology.ORDER_CONFIRMATION";
