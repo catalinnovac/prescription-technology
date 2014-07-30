@@ -15,12 +15,15 @@ import java.util.List;
  */
 public class Adapter extends ArrayAdapter<Item> {
 
+    private List<Item> internal_items;
+
     public Adapter(Context context, int textViewResourceId) {
         super(context, textViewResourceId);
     }
 
     public Adapter(Context context, int resource, List<Item> items) {
         super(context, resource, items);
+        internal_items = items;
     }
 
     @Override
@@ -37,11 +40,22 @@ public class Adapter extends ArrayAdapter<Item> {
         if (p != null) {
 
             CordovaWebView cordovaWebView = (CordovaWebView) v.findViewById(R.id.cordova_left_item_webview);
+            cordovaWebView.getSettings().setJavaScriptEnabled(true);
             if (cordovaWebView != null) {
                 cordovaWebView.loadUrl(p.FILE_URL);
             }
         }
         return v;
 
+    }
+
+    public View getViewById(String Id) {
+        int position = 0;
+        for (int i = 0; i < getCount(); i++) {
+            if (getItem(i).Id == Id)
+                position = i;
+            break;
+        }
+        return getView(position, null, null);
     }
 }

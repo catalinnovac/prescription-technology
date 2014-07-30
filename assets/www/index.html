@@ -4,11 +4,23 @@
     <title>Cordova</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css"/>
     <script type="text/javascript" src="cordova.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <h1>INDEX</h1>
-<a href="customeraddress.html">Go to CUSTOMER ADDRESS</a>
+<a href="#" id="c">Go to CUSTOMER ADDRESS</a>
+<script type="text/javascript">
+    console.log('aaaa');
+    $(function(){
+        $('#c').click(function(e){
+            e.preventDefault();
+            var js = 'console.log("cata is here");';
+            //console.log('aaa');
+            prescription.AddJavascriptToShoppingCart(js);
+        });
+    });
+
+</script>
 <!--
 <div id="test-ajax"></div>
 <input type="button" id="btn" value="google"/>

@@ -5,7 +5,7 @@
           android:versionName="1.0">
 
     <uses-sdk
-            android:minSdkVersion="8"
+            android:minSdkVersion="11"
             android:targetSdkVersion="17"/>
 
     <supports-screens
@@ -35,7 +35,7 @@
             android:allowBackup="true"
             android:icon="@drawable/ic_launcher"
             android:label="@string/index"
-            android:theme="@style/AppTheme">
+            android:theme="@style/Theme.AppCompat.Light">
         <activity
                 android:theme="@style/Theme.AppCompat.Light"
                 android:name="prescription.technology.Index"

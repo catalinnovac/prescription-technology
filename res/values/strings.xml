@@ -8,5 +8,6 @@
     <string name="customer_personal_info">Customer Personal Info</string>
     <string name="order_confirmation">Order Confirmation</string>
     <string name="questions">Questions</string>
-
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
 </resources>
