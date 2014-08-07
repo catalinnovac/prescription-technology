@@ -5,5 +5,5 @@ package prescription.technology.code.navigation.drawer;
  */
 public class Item {
     public String Id;
-    public String FILE_URL;
+    public String CONTENT;
 }

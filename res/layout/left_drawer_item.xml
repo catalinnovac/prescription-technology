@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.apache.cordova.CordovaWebView
+<prescription.technology.code.navigation.drawer.CustomCordovaWebView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/cordova_left_item_webview"
         android:layout_width="match_parent"

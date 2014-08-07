@@ -1,12 +1,13 @@
 package prescription.technology.code.navigation.drawer;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import org.apache.cordova.CordovaWebView;
 import prescription.technology.R;
+import prescription.technology.code.PrescriptionTechnologyWithNavigationDrawer;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  */
 public class Adapter extends ArrayAdapter<Item> {
 
+    private static final String TAG = "ADAPTER";
     private List<Item> internal_items;
 
     public Adapter(Context context, int textViewResourceId) {
@@ -29,20 +31,18 @@ public class Adapter extends ArrayAdapter<Item> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = convertView;
+        Item p = getItem(position);
         if (v == null) {
-            LayoutInflater vi;
-            vi = LayoutInflater.from(getContext());
+            LayoutInflater vi = LayoutInflater.from(getContext());
             v = vi.inflate(R.layout.left_drawer_item, null);
         }
-
-        Item p = getItem(position);
-
         if (p != null) {
-
-            CordovaWebView cordovaWebView = (CordovaWebView) v.findViewById(R.id.cordova_left_item_webview);
+            CustomCordovaWebView cordovaWebView = (CustomCordovaWebView) v.findViewById(R.id.cordova_left_item_webview);
             cordovaWebView.getSettings().setJavaScriptEnabled(true);
             if (cordovaWebView != null) {
-                cordovaWebView.loadUrl(p.FILE_URL);
+                Log.v(TAG, "LOAD URL:" + p.Id);
+                cordovaWebView.loadUrl(p.CONTENT);
+                PrescriptionTechnologyWithNavigationDrawer.__cart = cordovaWebView;
             }
         }
         return v;

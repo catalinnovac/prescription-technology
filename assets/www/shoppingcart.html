@@ -7,15 +7,26 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<a href="#">SHOPPING CART</a>
+<a href="#" onclick="fire()">SHOPPING CART</a>
 
 <div id="cart">
 
 </div>
 <script type="text/javascript">
-    function cata(){
-        alert('cata is in cart');
+    var evt = document.createEvent("Events");evt.initEvent("cataEvent", true, true);
+    window.evt = evt;
+    function fire(){
+        console.log(document.body.outerHTML);
+        window.dispatchEvent(evt);
     }
+    function cata(){
+        console.log('cata');
+        $('#cart').html('cata is here');
+    }
+   window.addEventListener("cataEvent", cata, false);
+
+
+
 
 </script>
 </body>

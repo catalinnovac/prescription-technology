@@ -1,7 +1,10 @@
-<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+        "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html>
 <head>
     <title>Cordova</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css"/>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
@@ -10,15 +13,21 @@
 <h1>INDEX</h1>
 <a href="#" id="c">Go to CUSTOMER ADDRESS</a>
 <script type="text/javascript">
-    console.log('aaaa');
     $(function(){
         $('#c').click(function(e){
             e.preventDefault();
-            var js = 'console.log("cata is here");';
-            //console.log('aaa');
-            prescription.AddJavascriptToShoppingCart(js);
+            var js = "window.evt.initEvent('cataEvent',true,true); window.dispatchEvent(window.evt);";
+            prescription.sendMessage(js);
         });
     });
+
+
+
+
+
+
+
+
 
 </script>
 <!--

@@ -3,13 +3,14 @@ package prescription.technology.code;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.widget.ListView;
 import org.apache.cordova.Config;
@@ -18,7 +19,10 @@ import org.apache.cordova.api.CordovaInterface;
 import org.apache.cordova.api.CordovaPlugin;
 import prescription.technology.R;
 import prescription.technology.code.navigation.drawer.Adapter;
+import prescription.technology.code.navigation.drawer.CustomCordovaWebView;
+import prescription.technology.code.navigation.drawer.DrawerToggle;
 import prescription.technology.code.navigation.drawer.Item;
+import prescription.technology.code.receivers.CartBroadcastReceiver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +33,7 @@ import java.util.concurrent.Executors;
  * Created by novac on 24-Jul-14.
  */
 public class PrescriptionTechnologyWithNavigationDrawer extends Activity implements CordovaInterface {
+    public static CustomCordovaWebView __cart;
     public final String TAG = "PRESCRIPTION TECHNOLOGY";
     private final ExecutorService threadPool = Executors.newCachedThreadPool();
     protected CordovaWebView appView;
@@ -38,6 +43,7 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     private ListView mDrawerList;
     private CordovaPlugin activityResultCallback;
     private ActionBarDrawerToggle mDrawerToggle;
+    private CartBroadcastReceiver cartBroadcastReceiver = new CartBroadcastReceiver();
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
@@ -50,34 +56,10 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         appView.addJavascriptInterface(this, "prescription");
         appView.addJavascriptInterface(new Constants(), "constants");
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerToggle = new ActionBarDrawerToggle(
-                this,                  /* host Activity */
-                mDrawerLayout,         /* DrawerLayout object */
-                R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
+        mDrawerToggle = new DrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer,
                 R.string.drawer_open,  /* "open drawer" description */
                 R.string.drawer_close  /* "close drawer" description */
-        ) {
-
-            /**
-             * Called when a drawer has settled in a completely closed state.
-             */
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-                //getActionBar().setTitle(mTitle);
-            }
-
-            /**
-             * Called when a drawer has settled in a completely open state.
-             */
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-                //getActionBar().setTitle(mDrawerTitle);
-            }
-        };
-
-        // Set the drawer toggle as the DrawerListener
+        );
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -85,17 +67,20 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
 
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         List<Item> items = new ArrayList<Item>();
+
         Item item = new Item();
         item.Id = "shopping-cart";
-        item.FILE_URL = "file:///android_asset/www/shoppingcart.html";
+        item.CONTENT = "file:///android_asset/www/shoppingcart.html";
         items.add(item);
+        /*
         Item item1 = new Item();
         item1.Id = "account-info";
-        item1.FILE_URL = "file:///android_asset/www/accountinfo.html";
+        item1.CONTENT = "file:///android_asset/www/accountinfo.html";
         items.add(item1);
-
+        */
         mDrawerList.setAdapter(new Adapter(this,
                 R.layout.left_drawer_item, items));
+        registerReceiver(cartBroadcastReceiver, new IntentFilter("CART"));
     }
 
     @Override
@@ -103,6 +88,12 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         super.onPostCreate(savedInstanceState);
         // Sync the toggle state after onRestoreInstanceState has occurred.
         mDrawerToggle.syncState();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        unregisterReceiver(cartBroadcastReceiver);
     }
 
     @Override
@@ -127,15 +118,9 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     public void startActivityForResult(CordovaPlugin cordovaPlugin, Intent intent, int requestCode) {
         this.activityResultCallback = cordovaPlugin;
         this.activityResultKeepRunning = this.keepRunning;
-
-
-// If multitasking turned on, then disable it for activities that return results
         if (cordovaPlugin != null) {
             this.keepRunning = false;
         }
-
-
-// Start activity
         super.startActivityForResult(intent, requestCode);
     }
 
@@ -145,15 +130,6 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     }
 
     @Override
-/**
- * Called when an activity you launched exits, giving you the requestCode you started it with,
- * the resultCode it returned, and any additional data from it.
- *
- * @param requestCode       The request code originally supplied to startActivityForResult(),
- *                          allowing you to identify who this result came from.
- * @param resultCode        The integer result code returned by the child activity through its setResult().
- * @param data              An Intent, which can return result data to the caller (various data can be attached to Intent "extras").
- */
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         CordovaPlugin callback = this.activityResultCallback;
@@ -181,35 +157,16 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     }
 
     public void onDestroy() {
-        super.onDestroy();
         if (this.appView != null) {
             this.appView.handleDestroy();
         }
+        super.onDestroy();
     }
 
     @JavascriptInterface
-    public void AddJavascriptToShoppingCart(final String js) {
-        final Adapter adapter = (Adapter) mDrawerList.getAdapter();
-        this.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                CordovaWebView shoppingCartWebView = (CordovaWebView) adapter.getViewById("shopping-cart");
-                shoppingCartWebView.loadUrl("<h1> CATA IS HERE </h1>");
-            }
-        });
-    }
-
-    @JavascriptInterface
-    public void AddJavascriptToAccountInfo(final String js) {
-        final Adapter adapter = (Adapter) mDrawerList.getAdapter();
-        this.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                CordovaWebView accountInfoWebView = (CordovaWebView) adapter.getViewById("account-info");
-                accountInfoWebView.getSettings().setJavaScriptEnabled(true);
-                //accountInfoWebView.loadUrl("javascript:" + js);
-                accountInfoWebView.loadUrl("javascript:cata()");
-            }
-        });
+    public void sendMessage(final String message) {
+        Intent i = new Intent("CART");
+        Log.v(TAG, "send Broadcast");
+        sendBroadcast(i);
     }
 }
