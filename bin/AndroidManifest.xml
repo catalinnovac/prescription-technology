@@ -5,7 +5,7 @@
           android:versionName="1.0">
 
     <uses-sdk
-            android:minSdkVersion="8"
+            android:minSdkVersion="11"
             android:targetSdkVersion="17"/>
 
     <supports-screens
@@ -37,6 +37,7 @@
             android:label="@string/index"
             android:theme="@style/AppTheme">
         <activity
+                android:theme="@style/AppTheme"
                 android:name="prescription.technology.Index"
                 android:label="@string/index">
             <intent-filter>
