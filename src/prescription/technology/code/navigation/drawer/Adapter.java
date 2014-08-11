@@ -40,9 +40,9 @@ public class Adapter extends ArrayAdapter<Item> {
         }
         if (p != null) {
             CustomCordovaWebView cordovaWebView = (CustomCordovaWebView) v.findViewById(R.id.cordova_left_item_webview);
-            cordovaWebView.getSettings().setJavaScriptEnabled(true);
             if (cordovaWebView != null) {
                 Log.v(TAG, "LOAD URL:" + p.Id);
+                cordovaWebView.getSettings().setJavaScriptEnabled(true);
                 cordovaWebView.loadUrl(p.CONTENT);
                 internal_context.AddNavigationDrawerView("CART", cordovaWebView);
             }

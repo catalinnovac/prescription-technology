@@ -16,6 +16,7 @@ public class CustomCordovaWebView extends CordovaWebView {
 
     public CustomCordovaWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
+
     }
 
     public CustomCordovaWebView(Context context, AttributeSet attrs, int defStyle) {
@@ -33,5 +34,9 @@ public class CustomCordovaWebView extends CordovaWebView {
         return super.onTouchEvent(event);
     }
 
+    @Override
+    public void handleDestroy() {
+        super.handleDestroy();
+    }
 
 }
