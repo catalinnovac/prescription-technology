@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.view.Gravity;
 import prescription.technology.Index;
 import prescription.technology.code.navigation.drawer.CustomCordovaWebView;
 
@@ -21,7 +22,8 @@ public class CartBroadcastReceiver extends BroadcastReceiver {
             cartView = (CustomCordovaWebView) activity.NavigationDrawerViews.get("CART");
             if (cartView != null) {
                 Log.v(TAG, "send javascript");
-                cartView.sendJavascript("showmessage(\"cata is here\")");
+                //cartView.sendJavascript("showmessage(\"cata is here\")");
+                activity.mDrawerLayout.openDrawer(Gravity.LEFT);
             } else
                 Log.v(TAG, "cartView is not set");
         }

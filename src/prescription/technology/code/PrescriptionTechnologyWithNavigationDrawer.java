@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
@@ -40,10 +41,10 @@ public abstract class PrescriptionTechnologyWithNavigationDrawer extends Activit
     private final ExecutorService threadPool = Executors.newCachedThreadPool();
     //<editor-fold desc="Fields"
     public HashMap<String, View> NavigationDrawerViews = new HashMap<String, View>();
+    public DrawerLayout mDrawerLayout;
     protected CordovaWebView appView;
     boolean activityResultKeepRunning;
     boolean keepRunning;
-    private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private CordovaPlugin activityResultCallback;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -94,6 +95,7 @@ public abstract class PrescriptionTechnologyWithNavigationDrawer extends Activit
         for (String key : broadcastReceiverHashMap.keySet()) {
             registerReceiver(broadcastReceiverHashMap.get(key), new IntentFilter(key));
         }
+        mDrawerLayout.openDrawer(Gravity.LEFT);
     }
 
     @Override
