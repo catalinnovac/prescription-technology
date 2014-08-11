@@ -55,6 +55,19 @@ public abstract class PrescriptionTechnologyWithNavigationDrawer extends Activit
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+        //getActionBar().hide();
+        //getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e4f2f2")));
+        /*
+        getActionBar().setDisplayShowHomeEnabled(false);
+        getActionBar().setDisplayShowCustomEnabled(true);
+        getActionBar().setDisplayShowTitleEnabled(false);
+        getActionBar().setCustomView(R.layout.action_bar);
+        LayoutInflater vi = LayoutInflater.from(this);
+        CordovaWebView actionbar = (CordovaWebView) vi.inflate(R.layout.action_bar, null);
+        actionbar.loadUrl("file:///android_asset/www/accountinfo.html");
+        */
+
         setContentView(R.layout.activity_main);
         appView = (CordovaWebView) findViewById(R.id.cordova_main_webview);
         Config.init(this);
@@ -67,9 +80,6 @@ public abstract class PrescriptionTechnologyWithNavigationDrawer extends Activit
                 R.string.drawer_close  /* "close drawer" description */
         );
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
 
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         List<Item> items = new ArrayList<Item>();
