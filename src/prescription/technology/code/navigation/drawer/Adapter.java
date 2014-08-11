@@ -18,6 +18,7 @@ public class Adapter extends ArrayAdapter<Item> {
 
     private static final String TAG = "ADAPTER";
     private List<Item> internal_items;
+    private PrescriptionTechnologyWithNavigationDrawer internal_context;
 
     public Adapter(Context context, int textViewResourceId) {
         super(context, textViewResourceId);
@@ -26,6 +27,7 @@ public class Adapter extends ArrayAdapter<Item> {
     public Adapter(Context context, int resource, List<Item> items) {
         super(context, resource, items);
         internal_items = items;
+        internal_context = (PrescriptionTechnologyWithNavigationDrawer) context;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class Adapter extends ArrayAdapter<Item> {
             if (cordovaWebView != null) {
                 Log.v(TAG, "LOAD URL:" + p.Id);
                 cordovaWebView.loadUrl(p.CONTENT);
-                PrescriptionTechnologyWithNavigationDrawer.__cart = cordovaWebView;
+                internal_context.AddNavigationDrawerView("CART", cordovaWebView);
             }
         }
         return v;

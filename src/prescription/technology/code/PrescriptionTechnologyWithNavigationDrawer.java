@@ -2,6 +2,7 @@ package prescription.technology.code;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -9,9 +10,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.MenuItem;
-import android.webkit.JavascriptInterface;
+import android.view.View;
 import android.widget.ListView;
 import org.apache.cordova.Config;
 import org.apache.cordova.CordovaWebView;
@@ -22,9 +22,10 @@ import prescription.technology.code.navigation.drawer.Adapter;
 import prescription.technology.code.navigation.drawer.CustomCordovaWebView;
 import prescription.technology.code.navigation.drawer.DrawerToggle;
 import prescription.technology.code.navigation.drawer.Item;
-import prescription.technology.code.receivers.CartBroadcastReceiver;
+import prescription.technology.code.webview.WebViewInterface;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -32,10 +33,13 @@ import java.util.concurrent.Executors;
 /**
  * Created by novac on 24-Jul-14.
  */
-public class PrescriptionTechnologyWithNavigationDrawer extends Activity implements CordovaInterface {
+public abstract class PrescriptionTechnologyWithNavigationDrawer extends Activity implements CordovaInterface {
+
     public static CustomCordovaWebView __cart;
     public final String TAG = "PRESCRIPTION TECHNOLOGY";
     private final ExecutorService threadPool = Executors.newCachedThreadPool();
+    //<editor-fold desc="Fields"
+    public HashMap<String, View> NavigationDrawerViews = new HashMap<String, View>();
     protected CordovaWebView appView;
     boolean activityResultKeepRunning;
     boolean keepRunning;
@@ -43,8 +47,10 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     private ListView mDrawerList;
     private CordovaPlugin activityResultCallback;
     private ActionBarDrawerToggle mDrawerToggle;
-    private CartBroadcastReceiver cartBroadcastReceiver = new CartBroadcastReceiver();
+    private HashMap<String, BroadcastReceiver> broadcastReceiverHashMap;
+    //</editor-fold>
 
+    //<editor-fold desc="Override">
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,8 +59,8 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         appView = (CordovaWebView) findViewById(R.id.cordova_main_webview);
         Config.init(this);
         appView.getSettings().setJavaScriptEnabled(true);
-        appView.addJavascriptInterface(this, "prescription");
-        appView.addJavascriptInterface(new Constants(), "constants");
+        WebViewInterface webViewInterface = new WebViewInterface(this);
+        appView.addJavascriptInterface(webViewInterface, "prescription");
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle = new DrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer,
                 R.string.drawer_open,  /* "open drawer" description */
@@ -67,20 +73,17 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
 
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         List<Item> items = new ArrayList<Item>();
-
         Item item = new Item();
         item.Id = "shopping-cart";
         item.CONTENT = "file:///android_asset/www/shoppingcart.html";
         items.add(item);
-        /*
-        Item item1 = new Item();
-        item1.Id = "account-info";
-        item1.CONTENT = "file:///android_asset/www/accountinfo.html";
-        items.add(item1);
-        */
         mDrawerList.setAdapter(new Adapter(this,
                 R.layout.left_drawer_item, items));
-        registerReceiver(cartBroadcastReceiver, new IntentFilter("CART"));
+
+        broadcastReceiverHashMap = GetBroadcastsMap();
+        for (String key : broadcastReceiverHashMap.keySet()) {
+            registerReceiver(broadcastReceiverHashMap.get(key), new IntentFilter(key));
+        }
     }
 
     @Override
@@ -93,7 +96,9 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
     @Override
     protected void onStop() {
         super.onStop();
-        unregisterReceiver(cartBroadcastReceiver);
+        for (String key : broadcastReceiverHashMap.keySet()) {
+            unregisterReceiver(broadcastReceiverHashMap.get(key));
+        }
     }
 
     @Override
@@ -162,11 +167,17 @@ public class PrescriptionTechnologyWithNavigationDrawer extends Activity impleme
         }
         super.onDestroy();
     }
+    //</editor-fold>
 
-    @JavascriptInterface
-    public void sendMessage(final String message) {
-        Intent i = new Intent("CART");
-        Log.v(TAG, "send Broadcast");
-        sendBroadcast(i);
+    //<editor-fold desc="Abstract">
+    protected abstract HashMap<String, BroadcastReceiver> GetBroadcastsMap();
+
+    //</editor-fold>
+
+    //<editor-fold desc="Public">
+    public void AddNavigationDrawerView(String key, View v) {
+        NavigationDrawerViews.put(key, v);
     }
+    //</editor-fold>
+
 }

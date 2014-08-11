@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import prescription.technology.code.PrescriptionTechnologyWithNavigationDrawer;
+import prescription.technology.Index;
 import prescription.technology.code.navigation.drawer.CustomCordovaWebView;
 
 /**
@@ -12,11 +12,18 @@ import prescription.technology.code.navigation.drawer.CustomCordovaWebView;
  */
 public class CartBroadcastReceiver extends BroadcastReceiver {
     private final static String TAG = CartBroadcastReceiver.class.getSimpleName();
+    public CustomCordovaWebView cartView;
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        CustomCordovaWebView cartView = PrescriptionTechnologyWithNavigationDrawer.__cart;
-        Log.v(TAG, "send javascript");
-        cartView.sendJavascript("window.dispatchEvent(evt)");
+        if (intent.getAction() == "CART") {
+            Index activity = (Index) context;
+            cartView = (CustomCordovaWebView) activity.NavigationDrawerViews.get("CART");
+            if (cartView != null) {
+                Log.v(TAG, "send javascript");
+                cartView.sendJavascript("showmessage(\"cata is here\")");
+            } else
+                Log.v(TAG, "cartView is not set");
+        }
     }
 }

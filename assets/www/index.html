@@ -16,10 +16,11 @@
     $(function(){
         $('#c').click(function(e){
             e.preventDefault();
-            var js = "window.evt.initEvent('cataEvent',true,true); window.dispatchEvent(window.evt);";
-            prescription.sendMessage(js);
+            prescription.sendMessage("CART");
         });
     });
+
+
 
 
 
